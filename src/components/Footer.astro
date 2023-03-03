@@ -1,0 +1,39 @@
+---
+const { tekst1, tekst2 } = Astro.props;
+---
+
+<footer>
+  <button><a class="link1" href="/#">Tilmeld dig gratis</a></button>
+  <p class="tekst1">{tekst1}</p>
+  <p class="tekst2">{tekst2}</p>
+</footer>
+
+<style>
+  a {
+    color: rgb(0, 0, 0);
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  button {
+    float: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: black;
+    margin-right: 30px;
+  }
+
+  .tekst1 {
+    color: white;
+    margin-left: 20px;
+  }
+
+  .tekst2 {
+    color: white;
+    margin-left: 20px;
+    font-size: 17px;
+  }
+</style>

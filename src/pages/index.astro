@@ -1,15 +1,28 @@
 ---
+import "../styles/style.css";
+import Navigation from "../components/Navigation.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Spotify</h1>
+    <main>
+      <!-- <h1>Spotify</h1>
+    <h2>Fokus</h2> -->
+      <Card header1="Fokus" header2="Spotify Playlists" h3="Peacefull piano" />
+    </main>
+
+    <!-- <h2>Spotify Playlists</h2> -->
+  </body>
+  <Footer tekst1="Eksempel på Spotify" tekst2="Tilmeld dig for at få ubegrænsede sange og podcasts med lejlighedsvise reklamer. Du skal ikke bruge kreditkort." />
 </html>

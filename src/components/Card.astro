@@ -1,0 +1,37 @@
+---
+// const header = Astro.props.header;
+// const text = Astro.props.text;
+
+const { header1, header2, text } = Astro.props;
+---
+
+<article class="card1">
+  <h2>{header1}</h2>
+  <img src="../peaceful_piano.jpeg" alt="piano" />
+  <img src="../deep_focus.jpeg" alt="focus" />
+  <img src="../instrumental_study.jpeg" alt="study" />
+  <img src="../jazz_vibes.jpeg" alt="jazz" />
+  <h2>{header2}</h2>
+  <img src="../viva_latino.jpeg" alt="latino" />
+  <img src="../rap_caviar.jpeg" alt="rap" />
+  <img src="../all_out_2010s.jpeg" alt="all" />
+  <img src="../rock_classics.jpeg" alt="rock" />
+  <slot />
+</article>
+
+<style>
+  .card1 {
+    background-color: rgb(50, 49, 49);
+  }
+  h2 {
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  img {
+    border-radius: 10px;
+    margin: 22px;
+  }
+</style>
